@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="http://underscorejs.org/underscore.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+  <title></title>
+</head>
+<body>
+
+  <div class="commit-display"></div>
+
+  <input id="sha"></input>
+  <button class="submit">submit</button>
+
+  <script id="commit-template" type="text/x-handlebars-template">
+    <div class="entry">
+      <h1>{{login}}</h1>
+      <img src="{{avatar_url}}">
+    </div>
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>
